@@ -1,0 +1,96 @@
+/* Style du body */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du header (bandeau fixe) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7e3a2c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Augmente le padding pour le bandeau initial */
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Style du titre h1 */
+header h1 {
+    margin: 0;
+    font-size: 4em; /* Augmente la taille du texte */
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Réduire le bandeau en scrollant */
+body.scrolled header {
+    padding: 15px 20px; /* Réduit le padding en scrollant */
+}
+
+body.scrolled header h1 {
+    font-size: 3em; /* Réduit la taille du texte en scrollant */
+}
+
+/* Ajoute un peu de contenu pour tester le scroll */
+.content {
+    padding-top: 150px; /* Pour laisser de la place pour le bandeau */
+    height: 200vh; /* Simule une page longue */
+}
+footer {
+    background-color: #7e3a2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Pousse le footer vers le bas de la page */
+}
+/* Style du footer */
+footer {
+    background-color: #7e3a2c; /* Couleur du footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Pousse le footer vers le bas de la page */
+    display: flex;
+    justify-content: space-around; /* Espace les sections de manière égale */
+    align-items: center;
+}
+
+/* Style des sections du footer */
+.footer-section {
+    flex: 1;
+    padding: 0 20px; /* Ajoute du padding horizontal */
+    position: relative;
+}
+
+/* Ajouter des traits verticaux entre les rubriques */
+.footer-section:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    width: 1px; /* Largeur du trait vertical */
+    background-color: white; /* Couleur du trait */
+}
+
+/* Style des titres et paragraphes */
+.footer-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+/* Ajoute un peu de contenu pour tester le scroll */
+.content {
+    padding-top: 150px; /* Pour laisser de la place pour le bandeau */
+    padding-bottom: 80px; /* Pour laisser de la place pour le footer */
+    height: 200vh; /* Simule une page longue */
+}

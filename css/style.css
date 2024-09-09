@@ -5,8 +5,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Style du header (bandeau fixe) */
+.space {
+    letter-spacing: 2px; /* Ajuste la valeur en fonction de l'espacement souhaité */
+  }
+/* ------------------------------Style du header (bandeau fixe) */
 header {
     position: fixed;
     top: 0;
@@ -20,7 +22,6 @@ header {
     z-index: 1000;
 }
 
-/* Style du titre h1 */
 header h1 {
     margin: 0;
     font-size: 4em; /* Augmente la taille du texte */
@@ -48,7 +49,7 @@ footer {
     padding: 20px;
     margin-top: auto; /* Pousse le footer vers le bas de la page */
 }
-/* Style du footer */
+/* ----------------------------Style du footer */
 footer {
     background-color: #7e3a2c; /* Couleur du footer */
     color: white;
@@ -93,4 +94,18 @@ footer {
     padding-top: 150px; /* Pour laisser de la place pour le bandeau */
     padding-bottom: 80px; /* Pour laisser de la place pour le footer */
     height: 200vh; /* Simule une page longue */
+}
+/*------------------------------contact*/
+.contact {
+  color: black; /* Couleur par défaut */
+  text-decoration: none; /* Retire le soulignement par défaut */
+  transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.contact:hover {
+  color: blue; /* Change la couleur au survol */
+}
+
+.contact:active {
+  color: red; /* Change la couleur lors du clic */
 }
